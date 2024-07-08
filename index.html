@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Museo Soumaya</title>
+  <link rel="stylesheet" href="header y footer.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-image: url(principal.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      padding: 5px;
+    
+    }
+
+    /* Estilos para el recuadro */
+    .recuadro {
+      border: 5px solid #000;
+      background-color: #f0f0f0;  
+      border-radius: 5px;
+      width: 370px;
+      text-align: center;
+      font-size: 13.5px;
+      padding: 15px;
+      margin: 10px auto;
+      /* Centrar recuadro horizontalmente */
+    }
+
+    img:hover {
+  filter: grayscale(100%); /* Efecto de escala de grises al 100% */
+}
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+            margin: 7px;
+        }
+
+    .container {
+      margin: 0 auto;
+      width: 800px;
+      padding: 30px;
+    }
+
+    ul,
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    ul.slider {
+      position: relative;
+      width: 800px;
+      height: 300px;
+    }
+
+    ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .1s;
+    }
+
+    ul.slider li img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    ul.slider li:first-child {
+      opacity: 1;
+      /*Mostramos el primer <li>*/
+    }
+
+    ul.slider li:target {
+      opacity: 1;
+      /*Mostramos el <li> del enlace que pulsemos*/
+    }
+
+    .menu {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .menu li {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .menu li a {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      background-color: #3b4248;
+      padding: 10px;
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      border-radius: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img src="logo.png" alt="logo" class="imagen" width="100px" height="59px"></a>
+      <a href="Sala1.html">Piso 1|Gallery 1</a>
+      <a href="Sala2.html">Piso 2|Gallery 2</a>
+      <a href="Sala3.html">Piso 3|Gallery 3</a>
+      <a href="Sala4.html">Piso 4|Gallery 4</a>
+      <a href="Sala5.html">Piso 5|Gallery 5</a>
+      <a href="Desarolladores.html">Desarolladores</a>
+    </nav>
+  </header>
+  
+  <div class="parallax"></div>
+
+  <div style=" display: flex; align-items: center;">
+    <div class="container1">
+     <a href="Sala1.html"> <img src="1.jpg" alt="Sala1" class="imagen" width="360px" height="201px"></a>
+      <a href="Sala2.html"><img src="2.jpeg" alt="Sala2" class="imagen" width="360px" height="201px"></a>
+      <a href="Sala3.html"><img src="3.jpeg" alt="Sala3" class="imagen" width="360px" height="201px"></a>
+      <a href="Sala4.html"><img src="4.jpeg" alt="Sala4" class="imagen" width="360px" height="201px"></a>
+      <a href="Sala5.html"><img src="5.jpeg" alt="Sala5" class="imagen" width="360px" height="201px"></a>
+    </div>
+  
+    <div class="container1" >
+    <div class="recuadro">
+      <h2>Tienda Museo Soumaya</h2>
+      <p>
+        La tienda del Museo Soumaya Plaza Carso se encuentra ubicada en el mismo recinto, en el sótano. Ofrece una amplia variedad de productos relacionados con el arte y la cultura, incluyendo...</p>
+      <a href="http://localhost:3000/tienda.php"><img src="tienda.jpg" alt="Tienda" width="308.8px" height="160.9px"></a>
+    </div>
+
+    <div class="recuadro">
+      <h2>Fundación e inauguración:</h2>
+      <p>Antes de que existiera el museo que llama la atención por su tamaño y forma, se creó el Museo Soumaya,
+        Fundación Carlos Slim, con sede en Plaza Loreto. El objetivo fue coleccionar, investigar y conservar el
+        patrimonio artístico de México y Europa para compartirlo de manera gratuita.
+        Fue nombrada en honor a Soumaya Slim Domit, esposa del empresario durante 33 años hasta su muerte.
+        En el lugar aún se exponen obras, pero la sede principal cambió el 29 de marzo 2011 cuando se construyó el
+        edificio en Nuevo Polanco. En la ceremonia de apertura estuvieron personalidades como el entonces presidente de
+        México Felipe Calderón Hinojosa y el escritor Gabriel García Márquez.
+        Un año después de su apertura registró más de 814 mil visitantes. La cifra ha incrementado y en 2016, hubo más
+        de dos millones de personas.
+        El museo está abierto 360 días del año de 10:00 de la mañana a 18:30 horas.</p>
+        <a href="https://fundacioncarlosslim.org"><img src="slim.jpg" alt="Slim" width="158px" height="100px"></a>
+    </div>
+</div>
+
+    <div class="container1">
+      <div class="recuadro">
+        <h2>Ubicacion</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.344864433368!2d-99.20727502478545!3d19.44069258184041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021a6e3a3d09%3A0x9372e2224c033cb3!2sMuseo%20Soumaya!5e0!3m2!1ses-419!2smx!4v1715403190763!5m2!1ses-419!2smx"
+          width="240px" height="118px" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Blvd. Miguel de Cervantes Saavedra, Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX</p>
+      </div>
+
+      <div class="recuadro">
+        <h2>Salas</h2>
+        <img src="Salas.jpeg" alt="Salas" class="imagen" width="200px" height="154px">
+        <p>Sala 1: Modernidad: Ars y Techne, Sala 2: Mitos y Alegorías: De lo visible a lo invisible,
+          Sala 3: Antiguos Maestros Europeos y Virreinales, Sala 4: Del Romanticismo a las Vanguardias
+          , Sala 5: 20 Siglos de Arte en México</p>
+      </div>
+
+      <div class="recuadro">
+        <h2>Vestibulo</h2>
+       <a href="Vestibulo.html"> <img src="Vestibulo.jpeg" alt="Vestibulo" class="imagen" width="200px" height="154px"></a>
+        <p>El vestíbulo es un espacio amplio y luminoso, con un techo alto y paredes de mármol blanco.
+
+          Cuenta con Taquilla, Tienda del museo, Acceso a las salas de exposiciones y Otros elementos: Escaleras,
+          Ascensores, Baños y Cafetería</p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="container1">
+    <div class="video-container">
+      <video autoplay loop muted width="384" height="420">
+        <source src="vestidos.mp4" type="video/mp4">
+      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7kydVqT-UNw?si=NfhUTufeaRJiQRnz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+  </div>
+  <div class="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jYt4lLdQ3tI?si=oJcnXQQAYJZjg_F7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+  <div class="container">
+
+    <ul class="slider">
+      <li id="slide1">
+        <img src="vestiditos.jpeg" />
+      </li>
+      <li id="slide2">
+        <img src="pasillo1.jpeg" />
+      </li>
+      <li id="slide3">
+        <img src="pasillo2.jpeg" />
+      </li>
+      <li id="slide4">
+        <img src="pasillo3.jpeg" />
+      </li>
+      <li id="slide5">
+        <img src="s4.jpg" />
+      </li>
+      <li id="slide6">
+        <img src="s5.jpeg" />
+      </li>
+      <li id="slide7">
+        <img src="s6.jpeg" />
+      </li>
+      <li id="slide8">
+        <img src="s7.jpeg" />
+      </li>
+      <li id="slide9">
+        <img src="s8.jpeg" />
+      </li>
+      <li id="slide10">
+        <img src="s9.jpg" />
+      </li>
+
+    </ul>
+
+    <ul class="menu">
+      <li>
+        <a href="#slide1">1</a>
+      </li>
+      <li>
+        <a href="#slide2">2</a>
+      </li>
+      <li>
+        <a href="#slide3">3</a>
+      </li>
+      <li>
+        <a href="#slide4">4</a>
+      </li>
+      <li>
+        <a href="#slide5">5</a>
+      </li>
+      <li>
+        <a href="#slide6">6</a>
+      </li>
+      <li>
+        <a href="#slide7">7</a>
+      </li>
+      <li>
+        <a href="#slide8">8</a>
+      </li>
+      
+      <li>
+        <a href="#slide9">9</a>
+      </li>
+      <li>
+        <a href="#slide10">10</a>
+      </li>
+    </ul>
+
+  </div>
+
+  <footer>
+    <div>
+      <p><span>Copyright&copy; 2024 - Todos los derechos reservados
+        </span> </p>
+      <ul class='enlaces_footer'>
+        <li><a href="https://www.tecnologicodecoacalco.edu.mx/TESCO/INICIO/INICIO.php"> <img src="tesco.png"alt="Tesco" width="118px" height="40px"></a></li>
+        <li><a href="http://www.museosoumaya.org"> <img src="sou.png" alt="Museo" width="71px" height="64px" > </a></li>
+        <li><a href="https://www.facebook.com/elmuseosoumaya/"> <img src="face.png" alt="Facebook"> </a></li>
+        <li><a href="https://www.instagram.com/elmuseosoumaya/"> <img src="insta.png" alt="Instagram"> </a></li>
+        <li><a href="https://twitter.com/ElMuseoSoumaya"> <img src="x.png" alt="X" > </a></li>
+        <li><a href="https://www.tiktok.com/@elmuseosoumaya?_t=8cOshiArL1y&_r=1"> <img src="tk.png" alt="Tik Tok" width="35px" height="35px" > </a></li>
+        <li><a href="https://www.youtube.com/channel/UC3z9vbkQNv2WmVD2pxsBFuA?view_as=subscriber"> <img src="you.png" alt="Tik Tok" width="128px" height="28.5px" > </a></li>
+      </ul>
+        <p>Tecnológico de Estudios Superiores Coacalco | Programacion WEB | 3521</p>
+    </div>
+  </footer>
+</body>
+</html>

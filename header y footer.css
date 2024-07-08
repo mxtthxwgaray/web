@@ -1,0 +1,78 @@
+  /* Estilos para el encabezado */
+       header {
+            background-color: #000;
+            color: #fff;
+          text-align: center;
+          font-size: 15px;
+        }
+            /* Estilos para el menú de navegación */
+            nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            align-items: center;
+        }
+/* Estilos para el footer */
+
+
+body {
+  font-family: courier, arial, helvética;
+
+}
+
+    Footer {
+      background-color: #3b4248;
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      margin-top: 2px;
+    }
+
+    Footer div {
+      padding: 10px 10px;
+    }
+
+    Footer p {
+      margin-bottom: 10px;
+      color:#ffffff;
+    }
+
+    Footer .enlaces_footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      line-height: 5px;
+      padding: 0 16px;
+      font-weight: 700;
+      background-color: rgba(0, 0, 0, .3);
+      border-radius: 25px;
+    }
+
+    Footer .enlaces_footer>li>a {
+      padding: 0 12px;
+    }
+
+    Footer span,
+    Footer a {
+      color: #ffffff;
+    }
+img:hover {
+  filter: grayscale(100%); /* Efecto de escala de grises al 100% */
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('museo.jpg');
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
